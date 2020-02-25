@@ -1,0 +1,14 @@
+
+<div style="text-align:center">
+  <button style="cursor:pointer" (click)="Onagregar()">+</button>
+
+</div>
+
+<div class="box">
+  <app-persona
+  *ngFor="let person of persona;let i=index"
+  [persona]="person"
+  [indice]="i"
+  ></app-persona>
+</div>
+<router-outlet></router-outlet>
